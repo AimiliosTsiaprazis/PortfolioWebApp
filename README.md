@@ -3,11 +3,11 @@ Portfolio Web Application with Login and Auth Service and Guard with Angular Fra
 # How to Start my PortfolioWebApp:
 -clone Repository
 
--open terminal and run npm install
+-open terminal and run "npm install"
 
--after installation run ng serve
+-after installation run "ng serve"
 
--localhost should appear and is ready to be called
+-"localhost" should appear and is ready to be called
 
 -Login with the Username of "AimiliosTsiaprazis" and password that is in my CV
 
