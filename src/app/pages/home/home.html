@@ -1,0 +1,56 @@
+<!-- Hero Section -->
+<section class="hero-section bg-primary text-white">
+  
+  <div class="col-lg-6 text-center">
+        <img src="MyImages/Aimilios01.png"
+             class="img-fluid rounded-circle profile-image"
+             alt="Profile Picture">
+      </div>
+
+  <div class="container">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold mb-4">
+          Hello, I'm {{ personalInfo.name }}
+        </h1>
+        <h3 class="mb-4">{{ personalInfo.title }}</h3>
+        <div>
+          <button class="btn btn-light btn-lg me-3" routerLink="/home">
+            Welcome :)
+          </button>
+          <button class="btn btn-outline-light btn-lg">
+          <a href="/contact">Get In Touch</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Projects Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Recent Projects</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4" *ngFor="let project of recentProjects">
+        <div class="card h-100 shadow-sm">
+          <img [src]="project.imageUrl" class="card-img-top" [alt]="project.title">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <div class="mb-3">
+              <span class="badge bg-secondary me-1" *ngFor="let tech of project.technologies">
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button class="btn btn-primary">
+      <a href="/projects">View All Projects</a>
+      </button>
+    </div>
+  </div>
+</section>

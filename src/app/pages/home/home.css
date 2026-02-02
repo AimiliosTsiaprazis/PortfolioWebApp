@@ -1,0 +1,43 @@
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+.btn a{
+text-decoration: none;
+color: black;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 2rem;
+  }
+}

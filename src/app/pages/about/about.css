@@ -1,0 +1,25 @@
+.about{
+    box-sizing: border-box;
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    margin: 0 auto;
+}
+.about img{
+    width: 650px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-shadow: 2px 2px 14px 1px black;
+    border-radius: 12px;
+}
+img{
+    margin: 0 auto;
+    max-width: 100%;
+}
+.info{
+    text-align: left;
+}

@@ -1,0 +1,11 @@
+.contact{
+    box-sizing: border-box;
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    margin: 0 auto;
+}

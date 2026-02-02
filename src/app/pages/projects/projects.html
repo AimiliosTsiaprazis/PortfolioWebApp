@@ -1,0 +1,19 @@
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Recent Projects</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4" *ngFor="let project of recentProjects">
+        <div class="card h-100 shadow-sm">
+          <img [src]="project.imageUrl" class="card-img-top" [alt]="project.title">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <div class="mb-3">
+              <span class="badge bg-secondary me-1" *ngFor="let tech of project.technologies">
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,24 @@
+<div class="login-page">
+  <div class="login-card">
+    <h2>Welcome</h2>
+    <p class="subtitle">Enter my credentials to access my portfolio</p>
+
+    <input
+      type="text"
+      placeholder="Username"
+      [(ngModel)]="username"
+      name="username"
+    />
+
+    <input
+      type="password"
+      placeholder="Password"
+      [(ngModel)]="password"
+      name="password"
+    />
+
+    <button (click)="login()">Login</button>
+
+    <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </div>
+</div>

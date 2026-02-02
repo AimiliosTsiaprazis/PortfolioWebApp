@@ -1,0 +1,23 @@
+footer {
+  margin-top: auto;
+}
+
+.social-links a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff !important;
+}
+
+hr {
+  border-color: #495057;
+}
+
+@media (max-width: 767.98px) {
+  .text-md-end {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
+}
