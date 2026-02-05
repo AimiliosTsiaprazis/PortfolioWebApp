@@ -1,6 +1,5 @@
 name: Angular CI Build
 
-# Workflow startet bei jedem Push oder Pull Request auf main
 on:
   push:
     branches: [ "main" ]
@@ -12,28 +11,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Repository auschecken
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Node.js Setup (kompatibel mit Angular 18+)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18.x'
+          node-version: '20.x'
 
-      # 3. Dependencies installieren
       - name: Install dependencies
         run: npm ci
 
-      # 4. Angular Projekt bauen
       - name: Build Angular App
         run: npm run build --if-present
 
-      # 5. Tests ausführen (falls vorhanden)
       - name: Run tests
         run: npm test --if-present
 
-      # Optional: Lint (falls du es benutzt)
       - name: Run Lint
         run: npm run lint --if-present
