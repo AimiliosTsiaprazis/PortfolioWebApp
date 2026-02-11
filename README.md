@@ -18,3 +18,8 @@ Portfolio Web Application with Login and Auth Service and Guard with Angular Fra
 - Just click the link where my project is hosted, login and see my projects
   
 https://portfoliowebapp-three.vercel.app
+
+# Project Versions
+- node.js: v24.12.0
+- Angular: 21.0.4
+- npm: 11.7.0
