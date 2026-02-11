@@ -176,6 +176,15 @@ export class DataService{
       imageUrl: 'ProjectsImages/RapidApi.png',
       demoUrl: 'https://example.com/demo19',
       githubUrl: 'https://github.com/AimiliosTsiaprazis'
+    },
+    {
+      id:20,
+      title: 'Football Team Management',
+      description: 'Full-stack web application for managing football team with players and matches, using C# for Custom API with Swagger, SQL - Supabase and Angular',
+      technologies: ['C#', 'Swagger', 'Custom API', 'Supabase', 'PostgreSQL', 'Angular'],
+      imageUrl: 'ProjectsImages/Football-Team-Management.jpg',
+      demoUrl: 'https://example.com/demo20',
+      githubUrl: 'https://github.com/AimiliosTsiaprazis'
     }
   ];
   constructor()
@@ -210,7 +219,7 @@ export class DataService{
       name:'Aimilios Tsiaprazis',
       title:'Junior Software developer',
       email: 'aimiliostsiaprazis@gmail.com',
-      phone: '0176 63701802',
+      phone: '-',
       location: 'Stuttgart, Germany'
     };
   }
